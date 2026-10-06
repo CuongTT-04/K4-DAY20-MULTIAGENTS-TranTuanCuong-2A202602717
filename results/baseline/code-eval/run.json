@@ -1,0 +1,79 @@
+{
+  "task": "code-eval",
+  "condition": "baseline",
+  "role": "eval",
+  "error": null,
+  "timestamp": "2026-10-06T16:21:00+00:00",
+  "skills_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "seconds": 20.6,
+  "tokens": {
+    "input": 35600,
+    "output": 2250,
+    "total": 37850
+  },
+  "tool_calls": 15,
+  "subagent_calls": 0,
+  "skills_read": 0,
+  "skills_modified": false,
+  "final_message": "Completed code-eval under baseline condition.",
+  "score": 0.5455,
+  "passed": 6,
+  "total": 11,
+  "checks": [
+    {
+      "name": "visible_suite_passes",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "tests_not_modified",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "parse_duration_all_formats",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "other_caller_fixed",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "billable_blocks_round_up",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "add_slot_no_shared_state",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "negative_minutes_rejected",
+      "passed": false,
+      "detail": "ValueError not raised for negative minutes"
+    },
+    {
+      "name": "rule_type_hints",
+      "passed": false,
+      "detail": "RULE: every public function in the package has type annotations on all parameters and on the return value."
+    },
+    {
+      "name": "rule_regression_tests",
+      "passed": false,
+      "detail": "RULE: add tests/test_regressions.py with test functions per bug fixed."
+    },
+    {
+      "name": "rule_changelog",
+      "passed": false,
+      "detail": "RULE: record fix in CHANGELOG.md under '## Unreleased'."
+    },
+    {
+      "name": "rule_version_bump",
+      "passed": false,
+      "detail": "RULE: bump patch version in pyproject.toml."
+    }
+  ]
+}

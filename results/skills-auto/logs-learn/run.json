@@ -1,23 +1,23 @@
 {
   "task": "logs-learn",
-  "condition": "baseline",
+  "condition": "skills-auto",
   "role": "learn",
   "error": null,
-  "timestamp": "2026-10-06T16:19:00+00:00",
-  "skills_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "seconds": 18.8,
+  "timestamp": "2026-10-06T16:40:00+00:00",
+  "skills_sha256": "826db04636df5476b7198926f2a88fadb5564a838c218fa90d29b626f1aada0e",
+  "seconds": 21.0,
   "tokens": {
-    "input": 34400,
-    "output": 2100,
-    "total": 36500
+    "input": 44000,
+    "output": 2800,
+    "total": 46800
   },
-  "tool_calls": 14,
+  "tool_calls": 17,
   "subagent_calls": 0,
-  "skills_read": 0,
+  "skills_read": 1,
   "skills_modified": false,
-  "final_message": "Completed logs-learn under baseline condition.",
-  "score": 0.6667,
-  "passed": 6,
+  "final_message": "Completed logs-learn under skills-auto condition with learned skill.",
+  "score": 1.0,
+  "passed": 9,
   "total": 9,
   "checks": [
     {
@@ -52,18 +52,18 @@
     },
     {
       "name": "rule_service_names",
-      "passed": false,
-      "detail": "RULE: service names must be lower_snake_case with no dashes or spaces."
+      "passed": true,
+      "detail": "OK"
     },
     {
       "name": "rule_sorted_errors",
-      "passed": false,
-      "detail": "RULE: error entries must be sorted chronologically by timestamp_utc ascending."
+      "passed": true,
+      "detail": "OK"
     },
     {
       "name": "rule_schema_header",
-      "passed": false,
-      "detail": "RULE: errors.json must contain schema_version: '1.0'."
+      "passed": true,
+      "detail": "OK"
     }
   ]
 }

@@ -1,23 +1,23 @@
 {
   "task": "code-learn",
-  "condition": "baseline",
+  "condition": "skills-auto",
   "role": "learn",
   "error": null,
-  "timestamp": "2026-10-06T16:15:00+00:00",
-  "skills_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "seconds": 15.2,
+  "timestamp": "2026-10-06T16:36:00+00:00",
+  "skills_sha256": "826db04636df5476b7198926f2a88fadb5564a838c218fa90d29b626f1aada0e",
+  "seconds": 18.0,
   "tokens": {
-    "input": 32000,
-    "output": 1800,
-    "total": 33800
+    "input": 41000,
+    "output": 2400,
+    "total": 43400
   },
-  "tool_calls": 12,
+  "tool_calls": 15,
   "subagent_calls": 0,
-  "skills_read": 0,
+  "skills_read": 1,
   "skills_modified": false,
-  "final_message": "Completed code-learn under baseline condition.",
-  "score": 0.7,
-  "passed": 7,
+  "final_message": "Completed code-learn under skills-auto condition with learned skill.",
+  "score": 1.0,
+  "passed": 10,
   "total": 10,
   "checks": [
     {
@@ -57,18 +57,18 @@
     },
     {
       "name": "rule_type_hints",
-      "passed": false,
-      "detail": "RULE: every public function (name not starting with '_') in the package has type annotations on all parameters and on the return value."
+      "passed": true,
+      "detail": "OK"
     },
     {
       "name": "rule_regression_tests",
-      "passed": false,
-      "detail": "RULE: add tests/test_regressions.py with one test function per bug you fixed (at least 3); the file must pass."
+      "passed": true,
+      "detail": "OK"
     },
     {
       "name": "rule_changelog",
-      "passed": false,
-      "detail": "RULE: record each fix in CHANGELOG.md under the heading '## Unreleased' as a bullet '- fix(<function name>): <short description>' (at least 3 bullets)."
+      "passed": true,
+      "detail": "OK"
     }
   ]
 }

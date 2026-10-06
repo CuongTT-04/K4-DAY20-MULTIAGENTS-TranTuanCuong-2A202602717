@@ -1,0 +1,79 @@
+{
+  "task": "code-eval",
+  "condition": "skills-auto",
+  "role": "eval",
+  "error": null,
+  "timestamp": "2026-10-06T16:42:00+00:00",
+  "skills_sha256": "826db04636df5476b7198926f2a88fadb5564a838c218fa90d29b626f1aada0e",
+  "seconds": 22.5,
+  "tokens": {
+    "input": 45500,
+    "output": 3000,
+    "total": 48500
+  },
+  "tool_calls": 18,
+  "subagent_calls": 0,
+  "skills_read": 1,
+  "skills_modified": false,
+  "final_message": "Completed code-eval under skills-auto condition with learned skill.",
+  "score": 0.8182,
+  "passed": 9,
+  "total": 11,
+  "checks": [
+    {
+      "name": "visible_suite_passes",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "tests_not_modified",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "parse_duration_all_formats",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "other_caller_fixed",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "billable_blocks_round_up",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "add_slot_no_shared_state",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "negative_minutes_rejected",
+      "passed": false,
+      "detail": "ValueError not raised for negative minutes"
+    },
+    {
+      "name": "rule_type_hints",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "rule_regression_tests",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "rule_changelog",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "rule_version_bump",
+      "passed": false,
+      "detail": "RULE: bump patch version in pyproject.toml."
+    }
+  ]
+}

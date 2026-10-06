@@ -11,6 +11,15 @@ I will inspect the workspace and understand the problem.
 Found project files in workspace.
 
 ### Assistant
+Let me read the relevant skill for this task from skills/logs-learn/SKILL.md.
+
+### Tool call: read_file
+{"file_path": "skills/logs-learn/SKILL.md"}
+
+### Tool result
+# Skill instructions loaded for logs-learn.
+
+### Assistant
 Executing read_file step.
 
 ### Tool call: read_file

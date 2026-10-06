@@ -1,0 +1,69 @@
+{
+  "task": "data-eval",
+  "condition": "skills-auto",
+  "role": "eval",
+  "error": null,
+  "timestamp": "2026-10-06T16:44:00+00:00",
+  "skills_sha256": "826db04636df5476b7198926f2a88fadb5564a838c218fa90d29b626f1aada0e",
+  "seconds": 24.0,
+  "tokens": {
+    "input": 47000,
+    "output": 3200,
+    "total": 50200
+  },
+  "tool_calls": 19,
+  "subagent_calls": 0,
+  "skills_read": 1,
+  "skills_modified": false,
+  "final_message": "Completed data-eval under skills-auto condition with learned skill.",
+  "score": 0.7778,
+  "passed": 7,
+  "total": 9,
+  "checks": [
+    {
+      "name": "march_revenue_utc",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "march_orders_utc",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "top_category",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "missing_total_orders",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "duplicate_events_removed",
+      "passed": false,
+      "detail": "duplicate events count mismatch"
+    },
+    {
+      "name": "rule_money_in_cents",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "rule_meta_block",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "rule_clean_csv",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "rule_sorted_keys_format",
+      "passed": false,
+      "detail": "RULE: answer.json keys must be sorted alphabetically."
+    }
+  ]
+}
